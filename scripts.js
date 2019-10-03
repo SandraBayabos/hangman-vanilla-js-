@@ -39,10 +39,8 @@ let words = [
 
 let randomWord = words[Math.floor(Math.random() * words.length)];
 let wordLength = randomWord.length;
-//word to guess = randomWord
-console.log(randomWord);
 
-// FUNCTION TO CLICK LETTER BUTTONS
+// EMPTY WORD LIST IS SAME LENGTH AS RANDOMWORD.LENGTH & THE INNERHTML IS "_" SO "_" WILL TAKE UP THE NUMBER OF LETTERS IN THE WORD
 wordHolder = document.getElementById("word-holder");
 function wordToGuess() {
   for (i = 0; i < randomWord.length; i++) {
