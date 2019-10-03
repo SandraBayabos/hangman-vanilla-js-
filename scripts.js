@@ -5,7 +5,6 @@ let prevGuesses = [];
 let counter = 10;
 
 // FUNCTION TO CREATE ALPHABET BUTTONS //
-
 function createAlphabet() {
   let alphabet = [];
   for (let i = 97; i <= 122; i++) {
@@ -44,7 +43,6 @@ let wordLength = randomWord.length;
 console.log(randomWord);
 
 // FUNCTION TO CLICK LETTER BUTTONS
-
 wordHolder = document.getElementById("word-holder");
 function wordToGuess() {
   for (i = 0; i < randomWord.length; i++) {
@@ -60,7 +58,6 @@ function wordToGuess() {
 window.onload = wordToGuess();
 
 // FUNCTION TO CHECK IF BUTTONS HAVE ALREADY BEEN CLICKED //
-
 function checkClick(alphaBtn) {
   alphaBtn = document.querySelectorAll(".btn");
   // ADD CLICKED EVENT TO EACH ALPHABET
@@ -104,7 +101,6 @@ function checkWin() {
 }
 
 //DISPLAY COUNTER
-
 function displayCounter(counter) {
   let counterBox = document.getElementById("counter");
   counterBox.innerHTML = counter;
