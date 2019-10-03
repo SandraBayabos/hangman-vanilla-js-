@@ -1,8 +1,5 @@
-// NUMBER OF GUESSES //
-let numOfGuesses = 10;
 // ARRAY OF LIST OF LETTERS
 let guesses = [];
-console.log(guesses);
 //ARRAY OF GUESSED LETTERS
 let prevGuesses = [];
 let counter = 10;
